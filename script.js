@@ -7,8 +7,6 @@ fetch("https://fakestoreapi.com/products").then((response) => response.json()).t
   .catch((err) => {
     console.log(err);
   });
-
-
 document.getElementById("searchInput").addEventListener("keyup", (e) => {
   const searchText = e.target.value.toLowerCase();
   const filteredProducts = allProducts.filter((item) =>
@@ -17,7 +15,6 @@ document.getElementById("searchInput").addEventListener("keyup", (e) => {
 
   setproducts(filteredProducts);
 });
-
 function setproducts(data) {
   let Htmldata = "";
 
